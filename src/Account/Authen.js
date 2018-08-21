@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Route,Link, Redirect,withRouter} from 'react-router-dom';
-import Landing from './Landing';
+
 
 
 var firebase = require('firebase');
@@ -91,9 +91,12 @@ signup(){
   }
 
 
-  logout(event){
+  logout(){
+
+
 
   	const promise = firebase.auth().signOut();
+  	console.log(promise);
 
   	promise.then(() =>{
   		console.log(promise)

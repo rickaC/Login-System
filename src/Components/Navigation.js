@@ -2,20 +2,12 @@ import React,{Component} from 'react';
 import About from './About';
 import Blog from './Blog';
 import Contact from './Contact';
-import Authen from './Authen';
-import SignIn from './SignIn';
+import Authen from '../Account/Authen';
+import SignIn from '../Account/SignIn';
 import {Link} from 'react-router-dom';
 import $ from 'jquery';
 
 class Navigation extends Component{
-
-	constructor(props) {
-		super(props);
-		
-		this.state = { 
-			ModalOne: false,
-			ModalTwo: false };
-	}
 
 	render() {
 		return(

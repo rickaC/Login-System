@@ -1,5 +1,7 @@
 
 import React,{Component} from 'react';
+import ApiCall from '../API/ApiCall';
+
 
 class About extends Component{
 	render() {
@@ -10,6 +12,7 @@ class About extends Component{
 		            <h3 className="mb-5">
 		              <em>A Free Bootstrap Theme by Start Bootstrap</em>
 		            </h3>
+		            <ApiCall />
 		           
 		          </div>
 		          <div className="overlay"></div>

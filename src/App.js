@@ -1,38 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Route,Redirect} from 'react-router-dom';
+import {Route,Redirect,Switch} from 'react-router-dom';
 
-import Authen from './Components/Authen'
+import Authen from './Account/Authen'
 import Navigation from './Components/Navigation';
 import About from './Components/About';
 import Blog from './Components/Blog';
 import Contact from './Components/Contact';
 import Questions from './Components/Questions';
 import Landing from './Components/Landing';
-import SignIn from './Components/SignIn';
-import LogOut from './Components/SignIn';
+import SignIn from './Account/SignIn';
+import LogOut from './Account/LogOut';
 
 
 class App extends Component{
 
-  state = {
-    redirect: true
-  }
-
-
-
-   renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to='/Landing' />
-    }
-  }
 
   render() {
     return(
       <div>
-      {this.renderRedirect()}
+
         <Navigation/ >
 
+      <Redirect to='/Landing' />
 
 
          <Route
