@@ -3,8 +3,8 @@
 
 
 
-input[type="name"] {
-  width: 480px;
+input[type="name"], .form input  {
+  width: 75%;
   margin-top: 20px;
   padding: 10px;
   font-size: 30px;
@@ -14,7 +14,7 @@ input[type="name"] {
 }
 
 input[type="email"] {
-  width: 480px;
+  width: 75%;
   margin-top: 20px;
   padding: 10px;
   font-size: 30px;
@@ -24,7 +24,7 @@ input[type="email"] {
 }
 
 input[type="password"] {
-  width: 480px;
+  width: 75%;
   margin-top: 20px;
   padding: 10px;
   font-size: 30px;
@@ -211,6 +211,13 @@ h6 {
   height: 30rem;
 }
 
+.api-li{
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
 @media (max-width: 992px) {
   .map {
     height: 75%;
@@ -267,9 +274,7 @@ h6 {
 }
 
 @media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-  }
+  
   .masthead h1 {
     font-size: 5.5rem;
   }
@@ -461,6 +466,7 @@ h6 {
   }
 }
 
+
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -531,6 +537,30 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+.form {
+  padding: 25px 25px;
+  text-align: center;
+}
+
+.form input {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+
+@media (max-width: 767px){
+  .masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+
+@media (max-width: 575px){
+  .row {
+    padding: 0;
+  }
 }
 
 

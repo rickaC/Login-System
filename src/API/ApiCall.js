@@ -35,12 +35,11 @@ class ApiCall extends Component {
 	render() {
 
 		return (
-			<div>
-				<h1>{`/r/${this.state.subr}`}</h1>
+			<div className="container">
 
-				<ul>
+				<ul className="row">
 				{this.state.posts.map(post =>
-					<li key={post.id}>{post.title}</li>
+					<li className="col-md-4 col-sm-4 api-li" key={post.id}>{post.title}</li>
 				)}
 				</ul>
 			</div>

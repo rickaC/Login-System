@@ -1,12 +1,41 @@
+import React, {Component} from 'react'
+import PhotoWall from './PhotoWall'
+import AddPhoto from './AddPhoto'
+import {Route, Link} from 'react-router-dom'
+import Single from './Single'
 
-import React,{Component} from 'react';
+class Blog extends Component {
 
-class Blog extends Component{
-	render() {
-		return(
-			<h1>This is the Blog Component</h1>
-		);
-	}	
+    componentDidMount(){
+      this.props.startLoadingPost()
+    }
+
+    render() {
+        return ( 
+        
+        <div>
+            <h1> 
+                <Link to="/"> Photowall </Link>    
+             </h1>
+            <Route exact path = "/" render={() => (
+                 <div>
+                      <PhotoWall {...this.props} />   
+                 </div>
+
+            )}/> 
+
+            <Route path= "/AddPhoto" render = {({history}) => (
+                <AddPhoto {...this.props} onHistory={history}/>
+            )}/>
+
+            <Route path="/single/:id" render = {(params) => (
+                <Single  {...this.props} {...params}/> 
+            )}/>
+         </div>
+        )
+    }
+
 }
 
 export default Blog;
+ 

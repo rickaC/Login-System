@@ -1,24 +1,8 @@
 import React, {Component} from 'react';
 import {Route,Link, Redirect,withRouter} from 'react-router-dom';
 
+import {firebase} from "../Firebase/firebase"
 
-
-var firebase = require('firebase');
-
-
-// Initialize Firebase
-var configAuthen = {
-	apiKey: "AIzaSyAg_J5j8qhbkRKrOrzLZXTEoZCr9OEsSpc",
-	authDomain: "loginapp-8e672.firebaseapp.com",
-	databaseURL: "https://loginapp-8e672.firebaseio.com",
-	projectId: "loginapp-8e672",
-	storageBucket: "loginapp-8e672.appspot.com",
-	messagingSenderId: "880089488937"
-	};
-
-	if (!firebase.apps.length) {
-		firebase.initializeApp(configAuthen);
-	}
 
 
 
@@ -48,7 +32,7 @@ class Authen extends Component {
 		const promise = auth.signInWithEmailAndPassword(email, password);
 
 		promise.then(user =>{
-  			 this.props.history.push("/Landing");
+  			 this.props.history.push("/");
     	});
 
 		promise.catch(e=>{
@@ -137,6 +121,7 @@ signup(){
 	render() {
 		return(
 		<div className="container">
+      <form className="form">
 			<input id="name" type="name" placeholder="Enter your name" ref="name"/><br/>
 			<input id="email" type="email" placeholder="Enter your email" ref="email"/><br/>
 			<input id="pass"  type="password" placeholder="Enter your password" ref="password"/><br/>
@@ -147,6 +132,7 @@ signup(){
 			<button className="modalSignUp" onClick={this.signup}>Sign Up</button>
 			<button id="logout" onClick={this.logout}>Log Out</button><br/>
 			{/*<button id="logout" className="google" onClick={this.google}>Sign In With Google</button>*/}
+      </form>
 		</div>
 		)
 	};
