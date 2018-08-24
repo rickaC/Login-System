@@ -1,7 +1,29 @@
 
 
 
+.addphoto-blue{
+  background-color: #4286f4 ;
+  height: 100vh;
+}
 
+.rest-color {
+  background-color: #ff0000;
+}
+
+.auth-color{
+  background-color: #00ff00;
+  height: 100vh;
+}
+
+.blog-color{
+ background-color: #ff6600;
+  height: 100vh;
+}
+
+.single-color{
+  background-color: #003399;
+  height: 100vh;
+}
 
 input[type="name"], .form input  {
   width: 75%;

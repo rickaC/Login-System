@@ -13,7 +13,6 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-	console.log(action);
     return bindActionCreators(action, dispatch);
 
 }

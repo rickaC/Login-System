@@ -17,22 +17,24 @@ class AddPhoto extends Component {
         }
         if (description && imageLink){
             this.props.startAddingPost(post)
-            this.props.onHistory.push('/Blog')
+            this.props.history.push('/PhotoWall')
         }
 
     }
 
     render() {
         return (
-    <div className="container">
-        <div className="form">
-          <form onSubmit={this.handleSubmit}> 
-               <input type ="text" placeholder="Link" name="link"/><br/>
-               <input type ="text" placeholder="Desciption" name="description"/><br/>
-               <button> Post </button>
-          </form>
-        </div>
-    </div>
+                <div className="addphoto-blue">
+                    <div className="container">
+                        <div className="form">
+                          <form onSubmit={this.handleSubmit}> 
+                               <input type ="text" placeholder="Link" name="link"/><br/>
+                               <input type ="text" placeholder="Desciption" name="description"/><br/>
+                               <button> Post </button>
+                          </form>
+                          </div>
+                    </div>
+                </div>
     )
     }
 }

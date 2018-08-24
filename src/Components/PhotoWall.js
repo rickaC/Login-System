@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 //anchor tag, href attribute
 function PhotoWall(props) {
+    console.log(props.posts);
 return  <div> 
              <Link className = "addIcon" to="/AddPhoto"> </Link> 
              <div className="photoGrid" >

@@ -6,7 +6,7 @@ import ApiCall from '../API/ApiCall';
 class About extends Component{
 	render() {
 		return(
-			<section className="masthead d-flex">
+			<section className="rest-color d-flex">
 		          <div className="container text-center my-auto">
 		            <h1 className="mb-1">REST API</h1>
 		            <h3 className="mb-5">

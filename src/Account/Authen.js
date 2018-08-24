@@ -120,6 +120,7 @@ signup(){
 
 	render() {
 		return(
+      <div>
 		<div className="container">
       <form className="form">
 			<input id="name" type="name" placeholder="Enter your name" ref="name"/><br/>
@@ -133,6 +134,7 @@ signup(){
 			<button id="logout" onClick={this.logout}>Log Out</button><br/>
 			{/*<button id="logout" className="google" onClick={this.google}>Sign In With Google</button>*/}
       </form>
+      </div>
 		</div>
 		)
 	};

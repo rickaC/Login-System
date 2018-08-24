@@ -1,9 +1,8 @@
 import {firebase} from "../Firebase/firebase"
 
 export function startAddingPost(post){
-    console.log('here');
     return (dispatch) =>{
-        return firebase.ref('posts').update({[post.id]:post}).then(()=>{
+        return firebase.database().ref('posts').update({[post.id]:post}).then(()=>{
             dispatch(addPost(post));
         }).catch((error)=>{
             console.log(error)
@@ -13,8 +12,7 @@ export function startAddingPost(post){
 
 export function startLoadingPost(){
     return (dispatch)=>{
-        console.log(dispatch);
-        return firebase.ref('posts').once('value').then((snapshot)=>{
+        return firebase.database().ref('posts').once('value').then((snapshot)=>{
             let posts = []
 
             snapshot.forEach((childSnapshot)=>{
@@ -27,7 +25,7 @@ export function startLoadingPost(){
 
 export function startRemovingPost(index, id){
     return (dispatch)=>{
-        return firebase.ref(`posts/${id}`).remove().then(()=>{
+        return firebase.database().ref(`posts/${id}`).remove().then(()=>{
             dispatch(removePost(index))
         })
     }

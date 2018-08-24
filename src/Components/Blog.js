@@ -13,24 +13,11 @@ class Blog extends Component {
     render() {
         return ( 
         
-        <div>
+        <div className="blog-color">
             <h1> 
-                <Link to="/"> Photowall </Link>    
+                <Link to="/"> Blog </Link>    
              </h1>
-            <Route exact path = "/" render={() => (
-                 <div>
-                      <PhotoWall {...this.props} />   
-                 </div>
-
-            )}/> 
-
-            <Route path= "/AddPhoto" render = {({history}) => (
-                <AddPhoto {...this.props} onHistory={history}/>
-            )}/>
-
-            <Route path="/single/:id" render = {(params) => (
-                <Single  {...this.props} {...params}/> 
-            )}/>
+            
          </div>
         )
     }

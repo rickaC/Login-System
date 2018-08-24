@@ -10,10 +10,14 @@ class Single extends Component {
         const comments = this.props.comments[match.params.id] || []
         const index = this.props.posts.findIndex((post) => post.id === id)
         
-        return <div className='single-photo'>
+        return (
+            <div className="single-color">
+        <div className='container'>
                  <Photo post={post} {...this.props} index={index}/>
                  <Comments addComment={this.props.addComment} comments={comments} id = {id}/>
         </div> 
+        </div>
+        )
           
     } 
 }
