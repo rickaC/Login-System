@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import PhotoWall from './PhotoWall'
-import AddPhoto from './AddPhoto'
 import {Route, Link} from 'react-router-dom'
 
 class Blog extends Component {

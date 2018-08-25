@@ -14,11 +14,11 @@ class Navigation extends Component{
 			<div>
 
 				<nav className="site-header sticky-top py-1">
-			      <div className="container d-flex flex-column flex-md-row justify-content-between">
-			        <Link to="/" className="py-2 d-none d-md-inline-block">Home</Link>
-				      <Link to="/RESTAPI" className="py-2 d-none d-md-inline-block">RESTAPI</Link>
-				      <Link to="/AddPhoto" className="py-2 d-none d-md-inline-block">AddPhoto</Link>
-				      <Link to="/SignIn" className="py-2 d-none d-md-inline-block">Sign In</Link>    
+			      <div className="container d-flex flex-md-row justify-content-between">
+			        <Link to="/" className="py-2  d-md-inline-block">Home</Link>
+				      <Link to="/RESTAPI" className="py-2  d-md-inline-block">RESTAPI</Link>
+				      <Link to="/AddPhoto" className="py-2  d-md-inline-block">AddPhoto</Link>
+				      <Link to="/SignIn" className="py-2  d-md-inline-block">Sign In</Link>    
 			      </div>
 			    </nav>
 			  </div>

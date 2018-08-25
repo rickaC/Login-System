@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Route,Link, Redirect,withRouter} from 'react-router-dom';
-
 import {firebase} from "../Firebase/firebase"
 
 
@@ -91,53 +90,22 @@ signup(event){
     promise.catch(e => {
       var err = e.message;
     });
-
-    // Hide LogOut Button
-    // var lout = document.getElementById('logout');
-    // lout.classList.add('hide');
   }
-
-  // google(){
-  //  var provider = new firebase.auth.GoogleAuthProvider();
-  //  firebase.auth().signInWithPopup(provider);
-  //  var promise = firebase.auth().signInWithPopup(provider);
-
-  //  promise.then( result => {
-  //    var user = result.user;
-  //    console.log(result);
-
-  //    firebase.database().ref('users/'+user.uid).set({
-  //      email: user.email,
-  //      name: user.displayName
-  //    });
-  //  });
-
-  //  promise.catch(e =>{
-  //    var msg = e.message;
-  //    console.log(msg);
-  //  });
-  // }
-
-
-  
-
-
 
   render() {
     return(
       <div>
     <div className="container">
       <form className="form">
-      <input id="name" type="name" placeholder="Enter your name" ref="name"/><br/>
-      <input id="email" type="email" placeholder="Enter your email" ref="email"/><br/>
-      <input id="pass"  type="password" placeholder="Enter your password" ref="password"/><br/>
-      <p>{this.state.err}</p>
+        <input id="name" type="name" placeholder="Enter your name" ref="name"/><br/>
+        <input id="email" type="email" placeholder="Enter your email" ref="email"/><br/>
+        <input id="pass"  type="password" placeholder="Enter your password" ref="password"/><br/>
+        <p>{this.state.err}</p>
 
 
-      <button onClick={this.login}>Sign In</button>
-      <button className="modalSignUp" onClick={this.signup}>Sign Up</button>
-      <button id="logout" onClick={this.logout}>Log Out</button><br/>
-      {/*<button id="logout" className="google" onClick={this.google}>Sign In With Google</button>*/}
+        <button onClick={this.login}>Sign In</button>
+        <button className="modalSignUp" onClick={this.signup}>Sign Up</button>
+        <button id="logout" onClick={this.logout}>Log Out</button><br/>
       </form>
       </div>
     </div>

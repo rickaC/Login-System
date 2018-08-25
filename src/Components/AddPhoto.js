@@ -7,6 +7,7 @@ class AddPhoto extends Component {
         super()
         this.handleSubmit = this.handleSubmit.bind(this)
     }
+    
     handleSubmit(event) {
         event.preventDefault();
         const imageLink = event.target.elements.link.value
@@ -29,8 +30,8 @@ class AddPhoto extends Component {
                     <div className="container">
                         <div className="form">
                           <form onSubmit={this.handleSubmit}> 
-                               <input type ="text" placeholder="Link" name="link"/><br/>
-                               <input type ="text" placeholder="Desciption" name="description"/><br/>
+                               <input type ="text" placeholder="Add Photo Link" name="link"/><br/>
+                               <input type ="text" placeholder="Add Photo Desciption" name="description"/><br/>
                                <button> Post </button>
                           </form>
                           </div>

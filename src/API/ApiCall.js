@@ -1,10 +1,19 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 
-
-
 //Api Call Component
 class ApiCall extends Component {
+
+	constructor(props) {
+		super(props);
+		
+		this.state = {
+			posts: [],
+			subr: 'space'
+		};
+		this.getReddit =this.getReddit.bind(this);
+
+	}
 
 
 	//https://www.reddit.com/r/space.json
@@ -17,25 +26,10 @@ class ApiCall extends Component {
 		});
 	}
 
+	// TODO save post to local storage
+
 	componentWillMount() {
 		this.getReddit();
-	}
-
-	componentDidMount(){
-		console.log(this.state.posts)
-		const posts = this.state.posts;
-		window.localStorage.setItem("posts", posts);
-	}
-
-	constructor(props) {
-		super(props);
-		
-		this.state = {
-			posts: [],
-			subr: 'space'
-		};
-		this.getReddit =this.getReddit.bind(this);
-
 	}
 
 	render() {

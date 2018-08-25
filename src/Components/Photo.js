@@ -17,7 +17,7 @@ function Photo(props) {
                     props.history.push('/')
                 }}> Remove </button>
                 </div>
-         </figure>
+             </figure>
          </div>
 }
 
