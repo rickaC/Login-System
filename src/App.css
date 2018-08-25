@@ -290,6 +290,19 @@ h6 {
   padding: 5px 0;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  padding-left: 10px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  padding-left: 10px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  padding-left: 10px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  padding-left: 10px;
+}
+
 
 @media (max-width: 767px){
   .masthead h1 {
@@ -301,6 +314,11 @@ h6 {
 @media (max-width: 575px){
   .row {
     padding: 0;
+  }
+
+  .form input {
+    font-size: 17px;
+    width: 100%;
   }
 }
 
