@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Authen from './Authen';
 
+// Logout Stateless Component
 class LogOut extends Component{
 	render() {
 		return(

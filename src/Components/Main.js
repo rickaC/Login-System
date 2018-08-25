@@ -8,16 +8,16 @@ import RESTAPI from './RESTAPI';
 import AddPhoto from './AddPhoto';
 import PhotoWall from './PhotoWall';
 import Blog from './Blog';
-import Contact from './Contact';
-import Questions from './Questions';
-import Single from './Single';
 import Landing from './Landing';
 import SignIn from '../Account/SignIn';
 import LogOut from '../Account/LogOut';
 
-
+// Main Components responsible for loading the content for the database and routing to different pages
 class App extends Component{
 
+  componentDidMount(){
+      this.props.startLoadingPost()
+    }
 
   render() {
     return(
@@ -46,19 +46,6 @@ class App extends Component{
 
             )}/>
 
-            <Route
-              exact path="/Contact"
-              component={() => <Contact />}
-            />
-
-            <Route path="/single/:id" render = {(params) => (
-                <Single  {...this.props} {...params}/> 
-            )}/>
-
-             <Route
-              exact path="/Questions"
-              component={() => <Questions />}
-            />
 
             <Route
               exact path="/PhotoWall"

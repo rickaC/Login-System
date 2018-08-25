@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import Authen from './Authen';
 
+
+// SignUp stateless Component
 class SignUp extends Component{
 	render() {
 		return(

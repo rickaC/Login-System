@@ -2,10 +2,11 @@ import React from 'react'
 import Photo from './Photo'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
-//anchor tag, href attribute
+
 function PhotoWall(props) {
-    console.log(props.posts);
-return  <div> 
+
+return  <div className="blog-color">
+        <div className="container"> 
              <Link className = "addIcon" to="/AddPhoto"> </Link> 
              <div className="photoGrid" >
                   {props.posts
@@ -14,6 +15,7 @@ return  <div>
                     })
                     .map((post, index) => <Photo key={index} post={post} {...props} index={index}/>)}
              </div>
+        </div>
         </div>
 }
 

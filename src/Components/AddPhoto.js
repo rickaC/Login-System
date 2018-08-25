@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+//AddPhoto component responsible for adding to database
 class AddPhoto extends Component {
 
     constructor() {
@@ -17,7 +18,7 @@ class AddPhoto extends Component {
         }
         if (description && imageLink){
             this.props.startAddingPost(post)
-            this.props.history.push('/PhotoWall')
+            this.props.history.push('/Blog')
         }
 
     }

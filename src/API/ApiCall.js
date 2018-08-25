@@ -3,9 +3,11 @@ import axios from 'axios';
 
 
 
-//https://www.reddit.com/r/space.json
+//Api Call Component
 class ApiCall extends Component {
 
+
+	//https://www.reddit.com/r/space.json
 	getReddit(){
 		axios.get(`https://www.reddit.com/r/${this.state.subr}.json`)
 		.then(res => {
@@ -17,6 +19,12 @@ class ApiCall extends Component {
 
 	componentWillMount() {
 		this.getReddit();
+	}
+
+	componentDidMount(){
+		console.log(this.state.posts)
+		const posts = this.state.posts;
+		window.localStorage.setItem("posts", posts);
 	}
 
 	constructor(props) {

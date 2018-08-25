@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 
+// Landing stateless component
 class Landing extends Component {
   render() {
     return (

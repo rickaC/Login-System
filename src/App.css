@@ -8,22 +8,35 @@
 
 .rest-color {
   background-color: #ff0000;
-}
-
-.auth-color{
-  background-color: #00ff00;
   height: 100vh;
 }
 
 .blog-color{
- background-color: #ff6600;
-  height: 100vh;
+  text-align: center;
+  margin-top: 90px;
 }
 
 .single-color{
   background-color: #003399;
   height: 100vh;
 }
+
+.photo-image{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+}
+
+.photo-image img {
+  width: inherit;
+  height: inherit;
+}
+
+.photo-wraper{
+  margin-bottom:45px;
+}
+
+
 
 input[type="name"], .form input  {
   width: 75%;
