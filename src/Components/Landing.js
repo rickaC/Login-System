@@ -7,7 +7,7 @@ class Landing extends Component {
       <div className="App">
        <section className="masthead d-flex">
           <div className="container text-center my-auto">
-            <h1 className="mb-1">ReactJs Login Project</h1>
+            <h1 className="mb-1">ReactJs Login Demo</h1>
           </div>
           <div className="overlay"></div>
         </section>

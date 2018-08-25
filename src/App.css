@@ -8,7 +8,6 @@
 
 .rest-color {
   background-color: #ff0000;
-  height: 100vh;
 }
 
 .blog-color{
@@ -293,7 +292,7 @@ h6 {
   position: relative;
   display: table;
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-color:#e6b31c;
