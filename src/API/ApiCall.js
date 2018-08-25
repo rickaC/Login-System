@@ -9,7 +9,8 @@ class ApiCall extends Component {
 		
 		this.state = {
 			posts: [],
-			subr: 'space'
+			subr: 'space',
+			isLoading: false
 		};
 		this.getReddit =this.getReddit.bind(this);
 
@@ -22,17 +23,26 @@ class ApiCall extends Component {
 		.then(res => {
 			const posts = res.data.data.children.map(obj => obj.data);
 			
-			this.setState({posts:posts});
+			this.setState({posts:posts, isLoading: false });
 		});
 	}
 
 	// TODO save post to local storage
 
-	componentWillMount() {
+	componentDidMount(){
+		this.setState({ isLoading: true });
+
+		// Fetch Data
 		this.getReddit();
 	}
 
 	render() {
+
+		const { isLoading } = this.state;
+
+    	if (isLoading) {
+      		return <p>Loading ...</p>;
+    	}
 
 		return (
 			<div className="container">

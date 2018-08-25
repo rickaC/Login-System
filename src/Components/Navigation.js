@@ -15,10 +15,10 @@ class Navigation extends Component{
 
 				<nav className="site-header sticky-top py-1">
 			      <div className="container d-flex flex-md-row justify-content-between">
-			        <Link to="/" className="py-2  d-md-inline-block">Home</Link>
+			        <Link to="/Landing" className="py-2  d-md-inline-block">Home</Link>
 				      <Link to="/RESTAPI" className="py-2  d-md-inline-block">RESTAPI</Link>
 				      <Link to="/AddPhoto" className="py-2  d-md-inline-block">AddPhoto</Link>
-				      <Link to="/SignIn" className="py-2  d-md-inline-block">Sign In</Link>    
+				      <Link to="/LogOut" className="py-2  d-md-inline-block">Log Out</Link>    
 			      </div>
 			    </nav>
 			  </div>

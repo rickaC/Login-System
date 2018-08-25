@@ -27,12 +27,17 @@ class App extends Component{
 
             <Route
               exact path="/"
-              component={() => <Landing />}
+              component={() => <SignIn />}
             /> 
           
            <Route
               exact path="/RESTAPI"
               component={() => <RESTAPI />}
+            />
+
+            <Route
+              exact path="/Landing"
+              component={() => <Landing />}
             />
 
             <Route path= "/AddPhoto" render = {({history}) => (

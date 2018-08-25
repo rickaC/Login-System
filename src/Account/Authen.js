@@ -14,9 +14,7 @@ class Authen extends Component {
     };
 
     this.login= this.login.bind(this);
-    this.signup = this.signup.bind(this);
-    this.logout = this.logout.bind(this);
-    // this.google = this.google.bind(this);  
+    this.signup = this.signup.bind(this); 
   }
 
   // Login Method
@@ -77,38 +75,24 @@ signup(event){
   }
 
 
-  logout(event){
-
-
-    event.preventDefault();
-    const promise = firebase.auth().signOut();
-
-    promise.then(() =>{
-      this.props.history.push("/SignIn");
-    });
-
-    promise.catch(e => {
-      var err = e.message;
-    });
-  }
+  
 
   render() {
     return(
       <div>
-    <div className="container">
-      <form className="form">
-        <input id="name" type="name" placeholder="Enter your name" ref="name"/><br/>
-        <input id="email" type="email" placeholder="Enter your email" ref="email"/><br/>
-        <input id="pass"  type="password" placeholder="Enter your password" ref="password"/><br/>
-        <p>{this.state.err}</p>
+        <div className="container">
+          <form className="form">
+            <input id="name" type="name" placeholder="Enter your name" ref="name"/><br/>
+            <input id="email" type="email" placeholder="Enter your email" ref="email"/><br/>
+            <input id="pass"  type="password" placeholder="Enter your password" ref="password"/><br/>
+            <p>{this.state.err}</p>
 
 
-        <button onClick={this.login}>Sign In</button>
-        <button className="modalSignUp" onClick={this.signup}>Sign Up</button>
-        <button id="logout" onClick={this.logout}>Log Out</button><br/>
-      </form>
+            <button onClick={this.login}>Sign In</button>
+            <button className="modalSignUp" onClick={this.signup}>Sign Up</button>
+          </form>
+          </div>
       </div>
-    </div>
     )
   };
 }
