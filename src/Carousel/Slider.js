@@ -19,7 +19,7 @@ class SimpleSlider extends Component {
         <div>
           <div className="hero-content">
             <div className="hero-text">
-              <h1>ReactJS Project</h1>
+              <h1 className="hero-title">ReactJS Project</h1>
             </div>
             <img className="img-responsive" src={Slider1}/>
           </div>
@@ -27,7 +27,7 @@ class SimpleSlider extends Component {
         <div>
           <div className="hero-content">
             <div className="hero-text">
-              <h1>ReactJS Project</h1>
+              <h1 className="hero-title">ReactJS Project</h1>
             </div>
             <img className="img-responsive" src={Slider1}/>
           </div>
@@ -35,7 +35,7 @@ class SimpleSlider extends Component {
         <div>
           <div className="hero-content">
             <div className="hero-text">
-              <h1>ReactJS Project</h1>
+              <h1 className="hero-title">ReactJS Project</h1>
             </div>
             <img className="img-responsive" src={Slider1}/>
           </div>
