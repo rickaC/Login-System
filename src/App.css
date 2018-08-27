@@ -1,0 +1,256 @@
+nav {
+  background-color: black;
+  
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: #fff;
+}
+
+
+.addphoto-blue{
+  background-color: #4286f4 ;
+  height: 100vh;
+}
+
+.blog-color{
+  text-align: center;
+  margin-top: 90px;
+}
+
+.single-color{
+  background-color: #003399;
+  height: 100vh;
+}
+
+.photo-image{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+}
+
+.photo-image img {
+  width: inherit;
+  height: inherit;
+}
+
+.photo-wraper{
+  margin-bottom:45px;
+}
+
+.hero-content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+.hero-content img {
+  width: 100%;
+}
+
+.hero-text {
+  position:absolute;
+}
+
+
+input[type="name"], .form input  {
+  width: 75%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+
+input[type="email"] {
+  width: 75%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+
+input[type="password"] {
+  width: 75%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 30px;
+
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+input[type="name"]:focus,
+input[type="email"]:focus,
+input[type="password"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+button {
+  font-size: 30px;
+  background-color: #00B16A;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 20px;
+  margin-right: 10px;
+
+}
+
+
+.namy{
+  font-size: 30px;
+  padding: 20px;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.content-section-heading h2 {
+  font-size: 3rem;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Map */
+.map {
+  height: 30rem;
+}
+
+.api-li{
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color:#e6b31c;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+}
+
+.form {
+  padding: 25px 25px;
+  text-align: center;
+}
+
+.form input {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.padding-section{
+  padding: 40px 0;
+}
+
+.section-2 img{
+  width: 100%;
+  height:250px;
+}
+
+.section-2 h3 {
+  margin: 20px 0;
+}
+
+.center{
+  text-align: center;
+}
+
+.hero-title {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  padding-left: 10px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  padding-left: 10px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  padding-left: 10px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  padding-left: 10px;
+}
+
+
+@media (max-width: 767px){
+  .masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+
+@media (max-width: 575px){
+  .row {
+    padding: 0;
+  }
+
+  .form input {
+    font-size: 17px;
+    width: 100%;
+  }
+}
+
+
