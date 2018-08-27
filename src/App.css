@@ -1,3 +1,16 @@
+
+nav {
+  background-color: black;
+  
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: #fff;
+}
+
+
 .addphoto-blue{
   background-color: #4286f4 ;
   height: 100vh;
