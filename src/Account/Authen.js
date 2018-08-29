@@ -30,7 +30,8 @@ class Authen extends Component {
     const promise = auth.signInWithEmailAndPassword(email, password);
 
     promise.then(user =>{
-         this.props.history.push("/Blog");
+        // this.props.history.push("/Blog");
+         console.log(this)
       });
 
     promise.catch(e=>{
@@ -88,8 +89,8 @@ signup(event){
             <p>{this.state.err}</p>
 
 
-            <button onClick={this.login}>Sign In</button>
-            <button className="modalSignUp" onClick={this.signup}>Sign Up</button>
+            <button onClick={this.login} >Sign In</button>
+            <button className="modalSignUp" onClick={this.signup, this.props.showNavbar}>Sign Up</button>
           </form>
           </div>
       </div>

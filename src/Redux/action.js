@@ -1,5 +1,6 @@
 import {firebase} from "../Firebase/firebase"
 
+
 export function startAddingPost(post){
     return (dispatch) =>{
         return firebase.database().ref('posts').update({[post.id]:post}).then(()=>{
@@ -51,5 +52,3 @@ export function loadPosts(posts){
         posts
     }
 }
-
-//adding post

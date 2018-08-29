@@ -15,15 +15,22 @@ import LogOut from '../Account/LogOut';
 // Main Components responsible for loading the content for the database and routing to different pages
 class App extends Component{
 
+  constructor(props) {
+    super(props);
+
+  }
+
+
   componentDidMount(){
-      this.props.startLoadingPost()
-    }
+      this.props.startLoadingPost();
+  }
+
 
   render() {
     return(
       <div>
 
-        <Navigation/ >
+        <Navigation />
 
             <Route
               exact path="/"
@@ -31,9 +38,16 @@ class App extends Component{
             /> 
           
            <Route
+              exact path="/Authen"
+              component={() => <Authen {...this.props} />}
+            />
+
+
+            <Route
               exact path="/RESTAPI"
               component={() => <RESTAPI />}
             />
+            
 
             <Route
               exact path="/Landing"
@@ -48,7 +62,6 @@ class App extends Component{
                  <div>
                       <PhotoWall {...this.props} />   
                  </div>
-
             )}/>
 
 
@@ -59,7 +72,7 @@ class App extends Component{
 
             <Route
               exact path="/SignIn"
-              component={() => <SignIn />}
+              component={() => <SignIn {...this.props} />}
             />
 
             <Route

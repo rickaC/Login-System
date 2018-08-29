@@ -41,7 +41,7 @@ class ApiCall extends Component {
 		const { isLoading } = this.state;
 
     	if (isLoading) {
-      		return <p>Loading ...</p>;
+      		return <p className="loading">Loading ...</p>;
     	}
 
 		return (

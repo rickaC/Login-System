@@ -94,7 +94,7 @@ input[type="password"].focus {
 }
 
 button {
-  font-size: 30px;
+  font-size: 20px;
   background-color: #00B16A;
   color: #fff;
   padding: 10px 30px;
@@ -235,6 +235,10 @@ h6 {
   padding-left: 10px;
 }
 
+.loading {
+  color:red;
+  font-size: 35px
+}
 
 @media (max-width: 767px){
   .masthead h1 {
@@ -251,6 +255,11 @@ h6 {
   .form input {
     font-size: 17px;
     width: 100%;
+  }
+
+  button {
+    font-size: 16px;
+
   }
 }
 
